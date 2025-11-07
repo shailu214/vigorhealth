@@ -1,0 +1,58 @@
+# VigorHealth - Repository Configuration Script
+
+# Use this script to configure GitHub repository settings
+
+# Repository description
+
+DESCRIPTION="AI-Enabled Health Assessment Platform with React frontend, Node.js backend, MongoDB, AI chatbot integration, OCR capabilities, WooCommerce integration, and GDPR compliance"
+
+# Repository topics
+
+TOPICS="react nodejs mongodb ai health-assessment chatbot ocr woocommerce gdpr typescript docker"
+
+echo "Repository Configuration for VigorHealth"
+echo "========================================"
+echo ""
+echo "Repository: shailu214/vigorhealth"
+echo "Description: $DESCRIPTION"
+echo "Topics: $TOPICS"
+echo ""
+echo "To configure your repository on GitHub:"
+echo ""
+echo "1. Go to: https://github.com/shailu214/vigorhealth"
+echo "2. Click the ⚙️ Settings tab"
+echo "3. In the General section, update:"
+echo " - Description: $DESCRIPTION"
+echo " - Topics: $TOPICS (comma-separated)"
+echo ""
+echo "4. Additional recommended settings:"
+echo " ✅ Issues - Enable for bug tracking"
+echo " ✅ Wiki - Enable for documentation"
+echo " ✅ Discussions - Enable for community"
+echo " ✅ Projects - Enable for project management"
+echo " ✅ Security - Enable vulnerability alerts"
+echo ""
+echo "5. Branch protection rules (recommended):"
+echo " - Protect main branch"
+echo " - Require pull request reviews"
+echo " - Require status checks to pass"
+echo " - Restrict pushes that create files larger than 100 MB"
+echo ""
+echo "6. GitHub Pages (optional):"
+echo " - Source: Deploy from a branch"
+echo " - Branch: main"
+echo " - Folder: /docs (if you want to host documentation)"
+echo ""
+echo "Repository is now configured with:"
+echo "✅ Complete codebase with Docker deployment"
+echo "✅ CI/CD pipeline with GitHub Actions"
+echo "✅ Comprehensive documentation"
+echo "✅ Production-ready configuration"
+echo "✅ Security scanning and monitoring"
+echo ""
+echo "Next steps:"
+echo "1. Configure environment variables for deployment"
+echo "2. Set up hosting platform (Heroku, AWS, DigitalOcean, etc.)"
+echo "3. Configure domain and SSL certificates"
+echo "4. Set up monitoring and analytics"
+echo ""
