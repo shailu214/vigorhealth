@@ -125,3 +125,4 @@ test-*.js
 
 # System files
 bash.exe.stackdump
+.vercel
