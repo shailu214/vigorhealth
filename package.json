@@ -8,14 +8,13 @@
     "server": "cd backend && npm run dev",
     "client": "cd frontend && npm start",
     "build": "cd frontend && npm run build",
-    "build:frontend": "cd frontend && npm install && npm run build",
+    "build:frontend": "cd frontend && npm install --legacy-peer-deps && npm run build",
     "build:backend": "cd backend && npm install",
-    "install-deps": "cd backend && npm install && cd ../frontend && npm install",
+    "install-deps": "cd backend && npm install && cd ../frontend && npm install --legacy-peer-deps",
     "start": "cd backend && npm start",
     "vercel-build": "npm run build:frontend",
     "vercel:dev": "vercel dev",
-    "vercel:deploy": "vercel --prod",
-    "postinstall": "npm run install-deps"
+    "vercel:deploy": "vercel --prod"
   },
   "repository": {
     "type": "git",
