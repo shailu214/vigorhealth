@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  # MongoDB for Development
+  mongodb-dev:
+    image: mongo:7.0
+    container_name: vigorhealth-mongodb-dev
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: devpassword
+      MONGO_INITDB_DATABASE: healthassessment_dev
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongodb_dev_data:/data/db
+    networks:
+      - vigorhealth-dev-network
+
+  # Redis for Development
+  redis-dev:
+    image: redis:7-alpine
+    container_name: vigorhealth-redis-dev
+    restart: unless-stopped
+    ports:
+      - "6380:6379"
+    volumes:
+      - redis_dev_data:/data
+    networks:
+      - vigorhealth-dev-network
+    command: redis-server --appendonly yes
+
+volumes:
+  mongodb_dev_data:
+    driver: local
+  redis_dev_data:
+    driver: local
+
+networks:
+  vigorhealth-dev-network:
+    driver: bridge
