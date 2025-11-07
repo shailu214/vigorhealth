@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test GDPR Modal</title>
+    <script>
+        function clearGDPRConsent() {
+            localStorage.removeItem('gdprConsent');
+            alert('GDPR consent cleared! Refresh the main page to see the modal.');
+        }
+    </script>
+</head>
+<body>
+    <h1>Test Page</h1>
+    <p>Click the button below to clear GDPR consent and test the modal:</p>
+    <button onclick="clearGDPRConsent()">Clear GDPR Consent</button>
+    <br><br>
+    <a href="/">Go to Main App</a>
+</body>
+</html>
